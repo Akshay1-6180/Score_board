@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --bg-color: #1a1a2e;
+    --text-color: #e9e9e9;
+    --primary-color: #16213e;
+    --secondary-color: #0f3460;
+    --accent-color: #e94560;
+    --input-bg: #24293e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+}
+
+#playerInput, #roundControls {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+#addPlayer {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+#addPlayer:hover {
+    background-color: var(--primary-color);
+}
+
+.round-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.round-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+#calculateFinal {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+#calculateFinal:hover {
+    opacity: 0.9;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+th {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+tr {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(233, 69, 96, 0.2);
+}
+
+.remove-btn {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.remove-btn:hover {
+    opacity: 0.9;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.new-row {
+    animation: fadeIn 0.5s ease-out;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher Battle Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cypher Battle Scoreboard</h1>
+        <div id="playerInput">
+            <input type="text" id="nameInput" placeholder="Dancer's Name">
+            <button id="addPlayer">Add Dancer</button>
+        </div>
+        <div id="roundControls">
+            <button id="startRound1" class="round-btn">Start Round 1</button>
+            <button id="startRound2" class="round-btn">Start Round 2</button>
+            <button id="calculateFinal">Final Scores</button>
+        </div>
+        <table id="scoreboard">
+            <thead>
+                <tr>
+                    <th>Dancer</th>
+                    <th>Round 1</th>
+                    <th>Round 2</th>
+                    <th>Final Score</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Scoreboard entries will be added here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

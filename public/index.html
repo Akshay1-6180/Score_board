@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cypher Battle Scoreboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>FOUNDRY Cypher Interactive Scoreboard</h1>
+    <div id="playerInput">
+        <input type="text" id="nameInput" placeholder="Enter name">
+        <button onclick="addPlayer()">Add Player</button>
+    </div>
+    <div id="roundControls" style="display: none; margin-top: 20px;">
+        <button onclick="startRound(1)">Start Round 1</button>
+        <button onclick="startRound(2)" style="display: none;">Start Round 2</button>
+        <button onclick="calculateFinalScores()" style="display: none;">Calculate Final Scores</button>
+    </div>
+    <table id="scoreboard">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Round 1 Score</th>
+                <th>Round 2 Score</th>
+                <th>Final Score</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Scoreboard entries will be added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
