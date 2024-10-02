@@ -52,7 +52,15 @@ To run this project, you need:
 
 ## Running the Application
 
-After installing the dependencies, run the following commands:
+1. Open your terminal (Command Prompt on Windows, Terminal on Mac).
+2. Navigate to the project directory where `package.json` is located:
+   ```bash
+   cd path/to/your/project
+3. Run this 
+    ```bash
+    npm install
+
+After installing the dependencies, by running node install run the following commands:
 
 1. Start the server:
    ```bash
